@@ -1,28 +1,60 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import { Button } from 'primereact/button';
-import { Calendar } from 'primereact/calendar';
+import logo from './assets/logo.png';
+
 function App() {
-  const [date, setDate] = useState(null);
   return (
     <>
-      <div className='card flex gap-2 py-4   justify-content-center'>
-        <div>
-          <h1 className='text-7xl'>Prime React Starter Project </h1>
+      <nav className='navbar'>
+        <div className='container'>
+          <div className='logo'>
+            <a href='index.html'>
+              <img src={logo} alt='logo' />
+            </a>
+          </div>
+
+          <div className='main-menu'>
+            <ul>
+              <li>
+                <a href='index.html'>Home</a>
+              </li>
+              <li>
+                <a href='#'>About Us</a>
+              </li>
+              <li>
+                <a href='#'>Blog</a>
+              </li>
+              <li>
+                <a className='btn' href='#'>
+                  <i className='fas fa-user'></i> Log In
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div className='card flex justify-content-center '>
-        <Button label='Check' icon='pi pi-check' />
-      </div>
-      <div className='card py-2 flex gap-2  justify-content-center'>
-        <Calendar value={date} onChange={(e) => setDate(e.value)} />
-        <Button
-          label='Help'
-          severity='help'
-          icon='pi pi-shield'
-          iconPos='right'
-        />
-      </div>
+      </nav>
+      {/* Hero */}
+      <section className='hero'>
+        <div className='container'>
+          <div className='hero-content'>
+            <h1 className='hero-heading text-xxl'>
+              A powerful solution to grow your startup. Fast!
+            </h1>
+            <p className='hero-text'>
+              Organize, collaborate, and track progress seamlessly with our
+              one-stop-shop startup growth tool.
+            </p>
+            <div className='hero-buttons'>
+              <a href='#' className='btn btn-primary'>
+                Get Started
+              </a>
+              <a href='#' className='btn'>
+                <i className='fas fa-laptop' /> Book a Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
