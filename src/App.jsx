@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import logo from './assets/logo.png';
-
+import videoPreview from './assets/video-preview.png';
 function App() {
   return (
     <>
@@ -44,7 +44,7 @@ function App() {
               Organize, collaborate, and track progress seamlessly with our
               one-stop-shop startup growth tool.
             </p>
-            <div className='hero-buttons'>
+            <div className='hero-buttons flex gap-2 align-items-center '>
               <a href='#' className='btn btn-primary'>
                 Get Started
               </a>
@@ -52,6 +52,22 @@ function App() {
                 <i className='fas fa-laptop' /> Book a Demo
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Video Section */}
+      <section className='video bg-black'>
+        <div className='container-sm'>
+          <h2 className='video-heading text-xl text-center'>
+            See how it works and get started in less than 2 minutes
+          </h2>
+          <div className='video-content'>
+            <a href='#'>
+              <img src={videoPreview} alt='video' className='video-preview' />
+            </a>
+            <a href='#' className='btn btn-primary'>
+              Get Started
+            </a>
           </div>
         </div>
       </section>
