@@ -90,7 +90,7 @@ img {
 }
 
 .text-xl {
-  font-size: 2.2rem;
+  font-size: 2.2rem !important;
   line-height: 1.4;
   font-weight: normal;
   margin: 40px 0 20px;
@@ -209,4 +209,59 @@ img {
 
 .video .video-preview {
   margin-bottom: 1.2rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonials .testimonials-heading {
+  width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.testimonials .testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* Pricing */
+
+.pricing .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.pricing .pricing-card-subheading {
+  margin-bottom: 2rem;
+}
+
+.pricing .pricing-card-price {
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.pricing ul {
+  margin: 2rem 0;
+}
+
+.pricing ul li {
+  margin-bottom: 1.5rem;
+}
+.pricing ul li i {
+  margin-right: 0.8rem;
+}
+
+.pricing .pricing-footer {
+  margin: 2rem 0;
 }
