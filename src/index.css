@@ -353,7 +353,7 @@ img {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 2rem;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .footer .card {
