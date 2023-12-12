@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import bookLogo from './assets/book_logo.png';
+import DataTableComp from './components/DataTable';
 function App() {
   return (
     <>
@@ -54,6 +55,11 @@ function App() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+      <section className='event-group'>
+        <div className='container'>
+          <DataTableComp />
         </div>
       </section>
     </>
